@@ -11,8 +11,10 @@
   <script src="https://kit.fontawesome.com/d77b7a8887.js" crossorigin="anonymous"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="./styles.css">
 
@@ -23,6 +25,7 @@
     .attribution {
       font-size: 11px;
       text-align: center;
+      width: 100%;
     }
 
     .attribution a {
@@ -43,15 +46,18 @@
       <h1>Build The Community Your Fans Will Love</h1>
       <p class="p-espaciado">Huddle re-imagines the way we build communities. You have a voice, but so does
         your audience. Create connections with your users as you engage in genuine discussion.</p>
-      <button>Get Started For Free</button>
+      <button class="build-button">Get Started For Free</button>
       <img src="./images/screen-mockups.svg" alt="screen mockups">
     </div>
 
     <div class="datos">
       <div class="img-communities">
         <img src="./images/icon-communities.svg" alt=" icon communities">
-        <p class="dato">1.4k+</p>
+        <div class="datos-p">
+           <p class="dato">1.4k+</p>
         <p class="communities-p">Communities Formed</p>
+        </div>
+       
       </div>
 
       <div class="img-communities segundo">
@@ -65,10 +71,11 @@
       <img class="section-top-mobile" src="./images/bg-section-top-mobile-1.svg" alt="">
 
       <div class="section-div">
-         <img src="./images/illustration-grow-together.svg" alt="illustration grow together">
-      <h2>Grow Together</h2>
-      <p class="p-espaciado p-espaciado-together">Generate meaningful discussions with your audience and build a strong, loyal community.
-        Think of the insightful conversations you miss out on with a feedback form.</p>
+        <img src="./images/illustration-grow-together.svg" alt="illustration grow together">
+        <h2>Grow Together</h2>
+        <p class="p-espaciado p-espaciado-together">Generate meaningful discussions with your audience and build a
+          strong, loyal community.
+          Think of the insightful conversations you miss out on with a feedback form.</p>
       </div>
 
       <img src="./images/bg-section-bottom-mobile-1.svg" alt="">
@@ -77,61 +84,79 @@
     <div class="section">
       <div class="section-div section-div-medio">
         <img src="./images/illustration-flowing-conversation.svg" alt="illustration flowing conversation">
-      <h2>Flowing Conversations</h2>
-      <p class="p-espaciado p-espaciado-Flowing">You wouldn't paginate a conversation in real life, so why do it online? Our threads have
-        just-in-time loading for a more natural flow.</p>
+        <h2>Flowing Conversations</h2>
+        <p class="p-espaciado p-espaciado-Flowing">You wouldn't paginate a conversation in real life, so why do it
+          online? Our threads have
+          just-in-time loading for a more natural flow.</p>
       </div>
-      
+
     </div>
 
-    <div>
-      <img src="./images/illustration-your-users.svg" alt="illustration your users">
-      <h2>Your Users</h2>
-      <p> It takes no time at all to integrate Huddle with your app's authentication solution. This means,
-        once signed in to your app, your users can start chatting immediately.
-      </p>
+    <div class="section">
+      <img class="section-top-mobile-2" src="./images/bg-section-top-mobile-2.svg" alt="">
+
+      <div class="section-div section-div-flowing">
+        <img src="./images/illustration-your-users.svg" alt="illustration your users">
+        <h2>Your Users</h2>
+        <p> It takes no time at all to integrate Huddle with your app's authentication solution. This means,
+          once signed in to your app, your users can start chatting immediately.
+        </p>
+      </div>
+
+      <img src="images/bg-section-bottom-mobile-2.svg" alt="">
     </div>
 
-    <div>
+    <div class="ready">
       <h2>Ready To Build Your Community?</h2>
-      <button>Get Started For Free</button>
+      <button class="build-button">Get Started For Free</button>
     </div>
   </main>
 
   <footer>
-
-    <div>
+    <img class="bg-footer-top-mobile" src="./images/bg-footer-top-mobile.svg" alt="">
+    <div class="footer-div">
       <div>
-        <img src="./images/logo.svg" alt="logo huddle">
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia
+        <h2>Newsletter</h2>
+        <p class="p-espaciado">To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll
+          never
+          send you spam or pass on your email address</p>
+        <form action="">
+          <input type="text">
+          <button>Subscribe</button>
+        </form>
+
+      </div>
+      <div class="sobre">
+        <img class="logo-footer" src="./images/logoBlanco.svg" alt="logo huddle">
+        <p class="p-espaciado"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit
+          lacinia
           vestibulum a, ultrices quis sem.</p>
-          <p>Phone: +1-543-123-4567</p>
-          <p>example@huddle.com</p>
+        <div class="about">
+          <div class="about-data">
+            <i class="fa-solid fa-phone-volume"></i>
+            <p>Phone: +1-543-123-4567</p>
+          </div>
+          <div class="about-data">
+            <i class="fa-regular fa-envelope"></i>
+            <p>example@huddle.com</p>
+          </div>          
+        </div>
+
+        <div class="social-icons">
           <i class="fa-brands fa-square-facebook"></i>
           <i class="fa-brands fa-instagram"></i>
           <i class="fa-brands fa-x-twitter"></i>
+        </div>
+
+        
       </div>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://www.linkedin.com/in/alejandro-elias-full-stack/">Alejandro Elias</a>.
+      </p>
     </div>
 
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
   </footer>
-  
-  
-
- 
-
-  
-  
-
-  Newsletter
-  To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
-  send you spam or pass on your email address
-
-  Subscribe
-
 </body>
 
 </html>

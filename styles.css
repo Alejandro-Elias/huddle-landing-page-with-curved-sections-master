@@ -68,7 +68,7 @@ header button {
     margin-bottom: 48px;
 }
 
-.build button {
+.build-button {
     width: 200px;
     border-radius: 50px;
     font-size: 12px;
@@ -77,17 +77,18 @@ header button {
     border: none;
     padding: 7px 0;
     margin-bottom: 60px;
-    height: 38px;
+    height: 40px;
     font-weight: 600;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
 }
 
 .build img {
     width: 80%;
-    margin: 70px 0 20px 0;
+    margin: 40px 0 38px 0;
 }
 
 .datos {
-    width: 40%;
+    width: 45%;
     margin: 0 auto;
 }
 
@@ -104,19 +105,20 @@ header button {
     font-size: 62px;
     font-weight: 700;
     margin-bottom: 4px;
+    width: 100%;
 }
 
 .communities-p {
     font-size: 15px;
     opacity: 0.5;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 300px;
+    padding-left: 2%;
 }
 
 .communities-p-dos {
     text-align: center;
-    width: 50%;
+    width: 45%;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 4px;
@@ -145,7 +147,7 @@ header button {
 
 .section-div img {
     width: 77%;
-    margin: 70px auto;
+    margin: 58px auto 76px auto;
 }
 
 .section-div h2 {
@@ -171,5 +173,164 @@ header button {
 .p-espaciado-Flowing {
     width: 100%;
     padding: 0 26px;
-    margin-bottom: 56px;
+    margin-bottom: 130px;
+
+}
+
+.section-top-mobile-2 {
+    display: flex;
+    align-items: flex-end;    
+}
+
+.section-div-flowing img {
+    margin-top: 0;
+}
+
+.section-div-flowing p {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 30px;
+    margin-bottom: 110px;
+}
+
+.ready {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ready h2 {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.ready button {
+    margin-top: 40px;
+    margin-bottom: 250px;
+}
+.bg-footer-top-mobile {
+    display: flex;
+    align-items: flex-end;
+}
+
+footer * {
+    width: 100%;
+}
+
+.footer-div {
+    background-color: var(--Very-Dark-Cyan);
+    color: white;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.footer-div h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-div p {
+    text-align: left;
+    line-height: 25px;
+    margin-bottom: 36px;
+    width: 100%;
+    padding-right: 30px;
+}
+
+.footer-div input {
+    width: 100%;
+    height: 48px;
+    margin: 0 auto;
+    border-radius: 8px;
+    border: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer-div button {
+    width: 50%;
+    margin-top: 14px;
+    height: 50px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: var(--Pink);
+    border: none;
+    border-radius: 5px;
+}
+
+.sobre img {
+    width: 60%;
+    margin-top: 100px;
+}
+
+.sobre p {
+    margin-top: 16px;
+}
+
+.about p {
+    margin: 0;
+}
+
+.about-data {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.about-data i {
+    font-size: 20px;
+    width: 12%;
+}
+
+.social-icons {
+    display: flex;
+    font-size: 24px;
+    width: 34%;
+    margin: 40px 0;
+}
+
+.attribution a {
+    color: white !important; 
+}
+
+.attribution {
+    margin-bottom: 0 !important;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+
+    header img {
+        width: 240px;
+    }
+
+    header button {
+        width: 138px;
+        height: 40px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    header {
+        padding: 80px 60px 0 80px;
+        margin-bottom: 250px;
+    }
+
+    .build h1 {
+        font-size: 40px;
+    }
+
+    .p-espaciado {
+        font-size: 17px;
+        width: 510px;
+    }
 }
