@@ -6,9 +6,12 @@
 
 :root {
     --Pink: hsl(322, 100%, 66%);
-     --Light-Pink: hsl(321, 100%, 78%); --Light-Red: hsl(0, 100%, 63%); --Very-Dark-Cyan: hsl(192, 100%, 9%); --Very-Pale-Blue: hsl(207, 100%, 98%);
-     --open-sans: "Open Sans", sans-serif;
-     --poppins: "Poppins", sans-serif;
+    --Light-Pink: hsl(321, 100%, 78%);
+    --Light-Red: hsl(0, 100%, 63%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Very-Pale-Blue: hsl(207, 100%, 98%);
+    --open-sans: "Open Sans", sans-serif;
+    --poppins: "Poppins", sans-serif;
 }
 
 body {
@@ -22,6 +25,11 @@ header {
     padding: 30px 18px 18px 18px;
     font-family: var(--poppins);
     margin-bottom: 100px;
+}
+
+button:hover {
+    background-color: var(--Light-Pink);
+    cursor: pointer;
 }
 
 header img {
@@ -132,6 +140,11 @@ header button {
     background-color: var(--Very-Pale-Blue);
 }
 
+.section-div-1 {
+    display: flex;
+    justify-content: center;
+}
+
 .section-top-mobile {
     display: flex;
     align-items: flex-end;
@@ -179,7 +192,7 @@ header button {
 
 .section-top-mobile-2 {
     display: flex;
-    align-items: flex-end;    
+    align-items: flex-end;
 }
 
 .section-div-flowing img {
@@ -208,6 +221,7 @@ header button {
     margin-top: 40px;
     margin-bottom: 250px;
 }
+
 .bg-footer-top-mobile {
     display: flex;
     align-items: flex-end;
@@ -294,17 +308,42 @@ form {
     display: flex;
     font-size: 24px;
     width: 34%;
-    margin: 40px 0;
+    margin: 40px 0 0 0;
+}
+
+.social-icons i:hover {
+    color: cyan;
+    cursor: pointer;
 }
 
 .attribution a {
-    color: white !important; 
+    color: white !important;
 }
 
 .attribution {
     margin-bottom: 0 !important;
     padding-bottom: 10px;
     text-align: center;
+}
+
+.desktop {
+    display: none;
+}
+
+form input {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.about {
+    margin-bottom: 60px;
+}
+
+.attribution-div {
+    background-color: var(--Very-Dark-Cyan);
+    height: 100%;
+    padding-top: 40px;
+    color: white;
 }
 
 @media (min-width: 1024px) {
@@ -332,5 +371,199 @@ form {
     .p-espaciado {
         font-size: 17px;
         width: 510px;
+        margin-bottom: 50px;
+    }
+
+    .build-button {
+        width: 400px;
+        height: 80px;
+        font-size: 20px;
+        margin-bottom: 120px;
+    }
+
+    .build img {
+        width: 1024px;
+        margin-bottom: 90px;
+    }
+
+    .datos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 280px;
+        margin-bottom: 140px;
+    }
+
+    .img-communities {
+        width: 250px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .datos img {
+        width: 50px;
+    }
+
+    .segundo {
+        transform: scale(100%);
+    }
+
+    .dato {
+        font-size: 100px;
+    }
+
+    .communities-p {
+        font-size: 22px;
+    }
+
+    .communities-p-dos {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .section-div {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .reverse {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .section-div-1 {
+        width: 50%;
+        margin-bottom: -20px;
+    }
+
+    .img-reverse {
+        display: flex !important;
+        justify-content: flex-end !important;
+    }
+
+    .section-div-1 img {
+        width: 70%;
+    }
+
+    .section-div-2 {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-div-2 h2 {
+        text-align: left;
+        font-size: 40px;
+        margin-bottom: 22px;
+        width: 70%;
+    }
+
+    .section-div-2 p {
+        text-align: left;
+        font-size: 15px;
+        line-height: 23px;
+        margin-bottom: 0;
+    }
+
+    .div-2-reverse {
+        align-items: flex-start;
+        margin-left: 6%;
+    }
+
+    .p-espaciado,
+    .section-div-flowing p,
+    .p-espaciado-together {
+        padding: 0;
+    }
+
+    .section-div-medio {
+        margin-bottom: 50px;
+    }
+
+    .ready {
+        margin-top: 100px;
+        margin-bottom: -100px;
+    }
+
+    .ready h2 {
+        font-size: 40px;
+        font-weight: 800;
+        margin-bottom: 2px;
+    }
+
+    .footer-div {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .sobre {
+        width: 50%;
+        padding-left: 110px;
+    }
+
+    .sobre img {
+        margin: 0;
+    }
+
+    .newsletter {
+        width: 50%;
+        padding: 0 100px 0 70px;
+    }
+
+    .attribution {
+        font-size: 24px !important;
+        padding-bottom: 20px;
+    }
+
+    .sobre img {
+        width: 240px;
+    }
+
+    .sobre p {
+        width: 320px;
+        font-size: 14px;
+    }
+
+    .about-data i {
+        width: 7%;
+    }
+
+    .social-icons i {
+        width: 50px;
+        font-size: 30px;
+    }
+
+    .newsletter p {
+        width: 360px;
+        font-size: 14px;
+    }
+
+    form {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    form input,
+    form button {
+        height: 50px;
+    }
+
+    form button:hover {
+        background-color: var(--Light-Pink);
+        cursor: pointer;
     }
 }
