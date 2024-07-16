@@ -99,6 +99,7 @@ header button {
 .datos {
     width: 45%;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .img-communities {
