@@ -29,6 +29,7 @@ header {
 
 button:hover {
     background-color: var(--Light-Pink);
+    color: white;
     cursor: pointer;
 }
 
